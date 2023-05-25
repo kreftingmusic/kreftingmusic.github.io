@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music</title>
+    <link rel="stylesheet" href="css/main.css">
+    	<link rel="shortcut Icon" href="css/images/favicon.png" type="image/png">
+    <script src="js/main.js"></script>
+  </head>
+  
+  <body>
+        <select id="Dropdown">
+          <option value="#">Select...</option>
+          <option value="home.html">Home</option>
+          <option value="contact.html">Contact Us</option>
+          <option value="server.html">Music</option>
+        </select>
+        
+        <br>
+        <audio controls>
+          <source src="" type="audio/mpeg">
+        </audio>
+        <div>
+        <audio>
+          <source src="" type="audio/mpeg">
+        </audio>
+        </div>
+          
+<!-- schreibe das JavaScript, um die Weiterleitung zu ermöglichen -->
+        
+    <script>
+      var dropdown = document.getElementById("Dropdown");
+dropdown.onchange=function()
+{
+  var url = this.value;
+  window.location.href=url;
+}
+    </script>
+  </body>
+</html>
