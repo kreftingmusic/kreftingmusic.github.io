@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+    	<link rel="shortcut Icon" href="favicon.png" type="image/png">
+    <script src="main.js"></script>
+  </head>
+  
+  <body>
+        <select id="Dropdown">
+          <option value="#">Select...</option>
+          <option value="home.html">Home</option>
+          <option value="contact.html">Contact Us</option>
+          <option value="server.html">Music</option>
+        </select>
+        
+  <section>
+    <h1>Info</h1>
+    <i style="font-size: 36px;">This is my Music Server. I loading all days new music up. You can listen se music for free. I hobe, you have fun with this website. This is the Beta Version. Thanks for your listening.</i>
+  </section>
+  
+  <section>
+    <form action="search.php">
+      <input type="text" name="search" placeholder="search...">
+      <input type="submit" name="search">
+    </form>
+  </section>
+  
+  <section>
+    <h1>Information to search:</h1>
+    <p>The Search Function is actually not supported. We work on this. Thank you for understanding</p>
+  </section>
+  
+  <section>
+  </section>
+        
+<!-- schreibe das JavaScript, um die Weiterleitung zu ermöglichen -->
+        
+    <script>
+      var dropdown = document.getElementById("Dropdown");
+dropdown.onchange=function()
+{
+  var url = this.value;
+  window.location.href=url;
+}
+    </script>
+  </body>
+</html>
