@@ -1,1 +1,52 @@
-# kreftingmusic.github.io
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="15; url=home.html">
+	<title>ServerCheck</title>
+	<style>
+		#progressBar {
+			width: 100%;
+			height: 30px;
+			background-color: #ddd;
+			position: relative;
+			animation: progressBar 15s linear forwards;
+		}
+
+		#progressBar .progress {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background-color: #4CAF50;
+			animation: progress 15s linear forwards;
+		}
+
+		@keyframes progressBar {
+			from {width: 0%;}
+			to {width: 100%;}
+		}
+
+		@keyframes progress {
+			from {width: 0%;}
+			to {width: 100%;}
+		}
+	</style>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="connect.css">
+	<link rel="shortcut Icon" href="favicon.png" type="image/png">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="progressBar">
+		<div class="progress"></div>
+	</div>
+	
+	<h1 style="font-name: Georgia; font-size: px; color: #666666">ServerCheck</h1>
+	<p style="font-name: Georgia; font-size: 36px; color: #666666">We check your Server Identity. This need ca. 15 sekunds</p>
+	<script>
+	  alert('You need JavaScript!');
+	</script>
+	<noscript>Please activate JavaScript</noscript>
+</body>
+</html>
