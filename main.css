@@ -1,1 +1,10 @@
+body {
+  background-image: url('image.jpg');
+}
 
+select {
+  font-size: 36px;
+  position: fixed;
+  top: 0em;
+  right: 7em;
+}
